@@ -124,7 +124,7 @@ app.patch("/profile", async(req, res)=>{
         res.status(500).send({ message: "Error updating profile", error: error.message });
     }
 })
-
+  
 connectDB().then(()=>{
     console.log("database conenct done ")
     app.listen(port, () => {
